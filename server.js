@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const socketio = require('socket.io')
 
-const SERVER_PORT = process.env.port || 3344
+const SERVER_PORT = process.env.PORT || 3344
 
 const server = http.createServer(app)
 const io = socketio(server) //http://localhost:3344/socket.io/socket.io.js
